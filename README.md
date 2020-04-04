@@ -11,6 +11,9 @@ Develop Polling Application
 
 ![Alt text](https://images.velog.io/images/kylie/post/16b389eb-6be9-42e5-9795-da4232a88a2e/django%20cycle.jpg)
 
+
+
+
 #Django Cycle 이해하기 
 client -> Web Server -> WSGI ->REQUEST ->urls.py에서 사용자가 요청한 특정 주소를 파싱 ->view 에서 역할에 맞는 기능 개발 (views.py->models.py->DB ->models.py->views.py)-> Template (.html) -> RESPONSE ->WSGI->Web Server ->client. 
 
@@ -175,5 +178,5 @@ request.POST 는 키로 전송된 자료에 접근할 수 있도록 해주는 �
 ##polls/results.html 템플릿 만들기
 
 ##제너릭 뷰 사용하기: 적은 코드가 더 좋다.
--URLconf수정 polls/urls.py에서  <question_id> 가 <pk> 로
--views 수정
+URLconf수정 polls/urls.py에서  <question_id> 가 <pk> 로
+views 수정
