@@ -148,7 +148,7 @@ polls/views.py에서
 
 ### html에 템플릿 시스템 사용하기 
 
-## 템플릿에서 하드코딩된 URL 제거하기
+### 템플릿에서 하드코딩된 URL 제거하기
 polls/index.html에서   
 ```<li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>```   
 대신에   
