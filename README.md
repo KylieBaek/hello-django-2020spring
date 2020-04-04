@@ -1,21 +1,21 @@
 # hello-django-2020spring
 
-first Django app
-=============
-https://docs.djangoproject.com/ko/3.0/intro/tutorial01/
+# first Django app
+<https://docs.djangoproject.com/ko/3.0/intro/tutorial01/>
+
 Django 튜토리얼을 따라해보면서 Polls Application을 만들어 보자
 
-Develop Polling Application
--사람들이 설문 내용을 보고 직접 투표할 수 있는 개방된 사이트
--관리자가 설문을 추가, 변경, 삭제할 수 있는 관리용 사이트
+Develop Polls Application
+* 사람들이 설문 내용을 보고 직접 투표할 수 있는 개방된 사이트
+* 관리자가 설문을 추가, 변경, 삭제할 수 있는 관리용 사이트
 
 ![Alt text](https://images.velog.io/images/kylie/post/16b389eb-6be9-42e5-9795-da4232a88a2e/django%20cycle.jpg)
 
 
 
 
-## Django Cycle 이해하기 
-client -> Web Server -> WSGI ->REQUEST ->urls.py에서 사용자가 요청한 특정 주소를 파싱 ->view 에서 역할에 맞는 기능 개발 (views.py->models.py->DB ->models.py->views.py)-> Template (.html) -> RESPONSE ->WSGI->Web Server ->client. 
+### Django Cycle 이해하기 
+#### client -> Web Server -> WSGI ->REQUEST ->urls.py에서 사용자가 요청한 특정 주소를 파싱 ->view 에서 역할에 맞는 기능 개발 (views.py->models.py->DB ->models.py->views.py)-> Template (.html) -> RESPONSE ->WSGI->Web Server ->client. 
 ---------------------------------------
 # Django Tutorial Part 1 
 
