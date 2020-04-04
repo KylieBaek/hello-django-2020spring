@@ -167,10 +167,10 @@ polls/urls.py에 app_name = 'polls' 앱 이름 추가
 forloop.counter : for 태그가 반복을 한 횟수
   
 
-### polls/views.py에 vote()함수 추가
+### polls/views.py에 vote() 추가
 request.POST 는 키로 전송된 자료에 접근할 수 있도록 해주는 사전과 같은 객체이다. 이 경우, ```request.POST['choice'] ```는 선택된 설문의 ID를 문자열로 반환한다. request.POST 의 값은 항상 문자열들이다.
 
-### polls/views.py에 results()함수 추가
+### polls/views.py에 results() 추가
 어떤 이가 설문조사에 설문을 하고난 뒤에는, vote() 뷰는 설문조사 결과 페이지로 리다이렉트한다. 그 뷰를 작성한다.
  
 ### polls/results.html 템플릿 만들기
