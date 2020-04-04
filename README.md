@@ -1,11 +1,8 @@
 # hello-django-2020spring
 
-# first Django app
 <https://docs.djangoproject.com/ko/3.0/intro/tutorial01/>
 
-Django 튜토리얼을 따라해보면서 Polls Application을 만들어 보자
-
-Develop Polls Application
+#### Develop Django Polls Application
 * 사람들이 설문 내용을 보고 직접 투표할 수 있는 개방된 사이트
 * 관리자가 설문을 추가, 변경, 삭제할 수 있는 관리용 사이트
 
@@ -45,7 +42,7 @@ $python manage.py runserver
 +)개발 서버에 운영환경 사용X 
 
 ### Project vs App
-App: a web application that does something
+App: a web application that does something   
 project: contains mutiple apps 
 장고는 app의 기본 디렉토리 구조를 자동 생성
 
@@ -123,8 +120,9 @@ $ python manage.py createsuperuser
 id,pwd생성
 
 ### 개발 서버 시작
-$ python manage.py runserver
-http://127.0.0.1:8000/admin/으로 접근하면 superuser 계정으로 로그인
+$ python manage.py runserver   
+
+<http://127.0.0.1:8000/admin/> 으로 접근하면 superuser 계정으로 로그인
 
 ##admin사이트에서 poll app 변경 가능하게 만들기
 polls/admin.py에 admin.site.register(Question) 추가 choice도 같은 방식으로 추가
@@ -164,7 +162,7 @@ polls/urls.py에 app_name = 'polls' 앱 이름 추가
 # Django Tutorial Part 4
 
 ### Write a minimal form
-투표 상세 템플릿("polls/detail.html")을 수정하여, 템플릿에 HTML <form> 요소를 포함시킨다.
+투표 상세 템플릿("polls/detail.html")을 수정하여, 템플릿에 ```HTML <form>``` 태그를 포함시킨다.
 ```{% csrf_token %}``` : 웹 보안 
 forloop.counter : for 태그가 반복을 한 횟수
   
