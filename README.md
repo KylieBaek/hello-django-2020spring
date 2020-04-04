@@ -64,7 +64,7 @@ mysite/polls/urls.py 에서 뷰 호출 -> mysite/polls/views.py 에서 return Ht
 최상위URLconf에서 polls.urls 모듈 연결시키기   
 mysite/urls.py에 path('polls/',include('polls.urls')) 추가   
 +) 다른 url 패턴 포함할 때마다 include() 항상 사용    
-include() 함수는 다른 URLconf들을 참조할 수 있도록 도와줍니다. Django가 함수 include()를 만나게 되면, URL의 그 시점까지 일치하는 부분을 잘라내고, 남은 문자열 부분을 후속 처리를 위해 include 된 URLconf로 전달합니다.   
+include() 함수는 다른 URLconf들을 참조할 수 있도록 도와다. Django가 함수 include()를 만나게 되면, URL의 그 시점까지 일치하는 부분을 잘라내고, 남은 문자열 부분을 후속 처리를 위해 include 된 URLconf로 전달한다.   
 
 path(route,view , kwargs,name)    
 
@@ -162,7 +162,7 @@ polls/urls.py에 app_name = 'polls' 앱 이름 추가
 # Django Tutorial Part 4
 
 ### Write a minimal form
-투표 상세 템플릿("polls/detail.html")을 수정하여, 템플릿에 ```HTML <form>``` 태그를 포함시킨다.
+투표 상세 템플릿("polls/detail.html")을 수정하여, 템플릿에 ```HTML <form>``` 태그를 포함시킨다.    
 ```{% csrf_token %}``` : 웹 보안 
 forloop.counter : for 태그가 반복을 한 횟수
   
