@@ -1,0 +1,21 @@
+<h1>{{ question.question_text }}</h1>
+{#1. #}
+{#<ul>#}
+{#question을 외래키로 가지는 모든 choice 가져오기#}
+{#{% for choice in question.choice_set.all %}#}
+{#    <li>{{ choice.choice_text }}</li>#}
+{#{% endfor %}#}
+{#</ul>#}
+
+{#2. form, input태그로 서버에 데이터 전달#}
+{#submit하면 해당 url = polls:vote을 호출하고 urls.py에 해당 url에서 views.vote 호출#}
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'polls:vote' question.id %}" method="post">
+{% csrf_token %}
+{% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+{% endfor %}
+<input type="submit" value="Vote">
+</form>
